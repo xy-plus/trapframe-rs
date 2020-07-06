@@ -20,3 +20,6 @@ exclude = ["docs", ".idea"]
 [target.'cfg(all(target_arch = "x86_64", target_os = "none"))'.dependencies]
 x86_64 = "0.11"
 raw-cpuid = "8.0"
+
+[target.'cfg(target_arch = "mips")'.dependencies]
+mips = { git = "https://github.com/xy-plus/rust-mips.git" }
